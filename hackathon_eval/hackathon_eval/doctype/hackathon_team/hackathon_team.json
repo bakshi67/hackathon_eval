@@ -1,0 +1,304 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:team_code",
+ "creation": "2026-10-06 13:57:01.813798",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_sec",
+  "team_code",
+  "team_name",
+  "track",
+  "status",
+  "col_break1",
+  "institution",
+  "state",
+  "lead_sec",
+  "team_lead",
+  "lead_email",
+  "lead_phone",
+  "col_break2",
+  "repo_url",
+  "demo_url",
+  "ppt_url",
+  "project_sec",
+  "project_title",
+  "project_summary",
+  "members_sec",
+  "members",
+  "scores_sec",
+  "l1_score",
+  "l2_avg",
+  "l2_normalized_avg",
+  "l2_review_count",
+  "col_break3",
+  "cumulative_score",
+  "l3_score",
+  "final_total",
+  "l2_rank",
+  "final_rank"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_sec",
+   "fieldtype": "Section Break",
+   "label": "Team Overview"
+  },
+  {
+   "fieldname": "team_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "track",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Track",
+   "options": "Web & Mobile\nAI/ML\nCloud & DevOps\nCybersecurity\nIoT & Hardware\nOpen Innovation\nFinTech\nHealthTech"
+  },
+  {
+   "default": "Enrolled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Enrolled\nL1 Shortlisted\nL1 Eliminated\nL2 Evaluated\nRegional Selected\nFinal Selected\nNot Selected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution / University"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State / Region"
+  },
+  {
+   "fieldname": "lead_sec",
+   "fieldtype": "Section Break",
+   "label": "Team Lead & Contact"
+  },
+  {
+   "fieldname": "team_lead",
+   "fieldtype": "Data",
+   "label": "Team Lead Name"
+  },
+  {
+   "fieldname": "lead_email",
+   "fieldtype": "Data",
+   "label": "Lead Email"
+  },
+  {
+   "fieldname": "lead_phone",
+   "fieldtype": "Data",
+   "label": "Lead Phone"
+  },
+  {
+   "fieldname": "col_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repo_url",
+   "fieldtype": "Data",
+   "label": "Repository URL"
+  },
+  {
+   "fieldname": "demo_url",
+   "fieldtype": "Data",
+   "label": "Demo URL"
+  },
+  {
+   "fieldname": "ppt_url",
+   "fieldtype": "Data",
+   "label": "Presentation (PPT) URL"
+  },
+  {
+   "fieldname": "project_sec",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Data",
+   "label": "Project Title"
+  },
+  {
+   "fieldname": "project_summary",
+   "fieldtype": "Small Text",
+   "label": "Project Summary"
+  },
+  {
+   "fieldname": "members_sec",
+   "fieldtype": "Section Break",
+   "label": "Team Members"
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Team Member"
+  },
+  {
+   "fieldname": "scores_sec",
+   "fieldtype": "Section Break",
+   "label": "Evaluation Scores & Progression"
+  },
+  {
+   "default": "0",
+   "fieldname": "l1_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L1 Score (Presentation /20)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "l2_avg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L2 Average (Demonstration /70)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "l2_normalized_avg",
+   "fieldtype": "Float",
+   "label": "L2 Normalized Average (/70)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "l2_review_count",
+   "fieldtype": "Int",
+   "label": "L2 Review Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cumulative_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cumulative Score (L1+L2 /90)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "l3_score",
+   "fieldtype": "Float",
+   "label": "L3 Score (Jammu Final /10)"
+  },
+  {
+   "default": "0",
+   "fieldname": "final_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Final Total (/100)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "l2_rank",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "L2 Rank",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "final_rank",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Final Rank",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-06 13:57:01.813798",
+ "modified_by": "Administrator",
+ "module": "Hackathon Eval",
+ "name": "Hackathon Team",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hackathon Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "L1 Reviewer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Mentor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "team_code,team_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "team_name",
+ "track_changes": 1
+}

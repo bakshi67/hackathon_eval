@@ -1,0 +1,109 @@
+{
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"National Hackathon Evaluation Center\", \"level\": 3}}, {\"type\": \"paragraph\", \"data\": {\"text\": \"End-to-end evaluation management across 3 levels.\"}}, {\"type\": \"header\", \"data\": {\"text\": \"Shortcuts\", \"level\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Control Panel\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Hackathon Teams\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Mentors\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Mentor Assignments\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"L1 Reviews\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"L2 Evaluations\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Hackathon Settings\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Score Matrix\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Leaderboard\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Final Standings\"}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"L3 Evaluations\"}}]",
+ "creation": "2026-10-06 14:07:39.988524",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Hackathon",
+ "links": [],
+ "modified": "2026-10-06 16:00:10.272021",
+ "modified_by": "Administrator",
+ "module": "Hackathon Eval",
+ "name": "Hackathon",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Hackathon Admin"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "L1 Reviewer"
+  },
+  {
+   "role": "Mentor"
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Control Panel",
+   "link_to": "hackathon_control_pa",
+   "type": "Page"
+  },
+  {
+   "doc_view": "",
+   "label": "Hackathon Teams",
+   "link_to": "Hackathon Team",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Mentors",
+   "link_to": "Mentor",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Mentor Assignments",
+   "link_to": "Mentor Assignment",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "L1 Reviews",
+   "link_to": "L1 Review",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "L2 Evaluations",
+   "link_to": "L2 Evaluation",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Hackathon Settings",
+   "link_to": "Hackathon Settings",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Score Matrix",
+   "link_to": "Mentor Team Score Matrix",
+   "report_ref_doctype": "L2 Evaluation",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Leaderboard",
+   "link_to": "Leaderboard",
+   "report_ref_doctype": "Hackathon Team",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Final Standings",
+   "link_to": "Final Standings",
+   "report_ref_doctype": "Hackathon Team",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "L3 Evaluations",
+   "link_to": "L3 Evaluation",
+   "type": "DocType"
+  }
+ ],
+ "title": "Hackathon"
+}

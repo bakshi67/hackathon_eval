@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "creation": "2026-10-06 13:56:59.432656",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scoring_sec",
+  "l1_max_marks",
+  "l2_max_marks",
+  "l3_max_marks",
+  "overall_max",
+  "col_break1",
+  "l2_criterion_max",
+  "min_mentors_per_team",
+  "normalize_mentor_scores",
+  "scoring_locked",
+  "counts_sec",
+  "l1_shortlist_target_min",
+  "l1_shortlist_target_max",
+  "regional_count",
+  "col_break2",
+  "final_count",
+  "winners_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "scoring_sec",
+   "fieldtype": "Section Break",
+   "label": "Scoring Scheme Configuration"
+  },
+  {
+   "default": "20",
+   "fieldname": "l1_max_marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L1 Max Marks (Presentation)",
+   "reqd": 1
+  },
+  {
+   "default": "70",
+   "fieldname": "l2_max_marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L2 Max Marks (Demonstration)",
+   "reqd": 1
+  },
+  {
+   "default": "10",
+   "fieldname": "l3_max_marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L3 Max Marks (Final)",
+   "reqd": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "overall_max",
+   "fieldtype": "Float",
+   "label": "Overall Max Marks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "10",
+   "fieldname": "l2_criterion_max",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L2 Criterion Max (Each of 7)",
+   "reqd": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "min_mentors_per_team",
+   "fieldtype": "Int",
+   "label": "Min Mentors per Team",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "normalize_mentor_scores",
+   "fieldtype": "Check",
+   "label": "Normalize Mentor Scores (Z-Score)"
+  },
+  {
+   "default": "0",
+   "fieldname": "scoring_locked",
+   "fieldtype": "Check",
+   "label": "Lock All Scoring"
+  },
+  {
+   "fieldname": "counts_sec",
+   "fieldtype": "Section Break",
+   "label": "Selection & Progression Quotas"
+  },
+  {
+   "default": "250",
+   "fieldname": "l1_shortlist_target_min",
+   "fieldtype": "Int",
+   "label": "L1 Shortlist Target Min",
+   "reqd": 1
+  },
+  {
+   "default": "300",
+   "fieldname": "l1_shortlist_target_max",
+   "fieldtype": "Int",
+   "label": "L1 Shortlist Target Max",
+   "reqd": 1
+  },
+  {
+   "default": "80",
+   "fieldname": "regional_count",
+   "fieldtype": "Int",
+   "label": "Regional Selected Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "8",
+   "fieldname": "final_count",
+   "fieldtype": "Int",
+   "label": "Final Selected Count",
+   "reqd": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "winners_count",
+   "fieldtype": "Int",
+   "label": "Winners Count",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-06 13:56:59.432656",
+ "modified_by": "Administrator",
+ "module": "Hackathon Eval",
+ "name": "Hackathon Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Hackathon Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "L1 Reviewer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Mentor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

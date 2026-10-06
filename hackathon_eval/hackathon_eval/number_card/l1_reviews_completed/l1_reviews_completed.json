@@ -1,0 +1,22 @@
+{
+ "creation": "2026-10-06 14:07:39.808626",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "L1 Review",
+ "filters_json": "[[\"L1 Review\", \"docstatus\", \"=\", 1]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "L1 Reviews Completed",
+ "modified": "2026-10-06 14:07:39.808626",
+ "modified_by": "Administrator",
+ "module": "Hackathon Eval",
+ "name": "L1 Reviews Completed",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_full_number": 0,
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

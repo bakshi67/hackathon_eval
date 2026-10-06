@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:L2-{team}-{mentor}",
+ "creation": "2026-10-06 13:57:05.348627",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team",
+  "team_name",
+  "mentor",
+  "assignment",
+  "criteria_sec",
+  "coding",
+  "solution_architecture",
+  "outcome",
+  "future_plan",
+  "col_break1",
+  "innovation",
+  "collaboration",
+  "mentor_score",
+  "summary_sec",
+  "total",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "team",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Team",
+   "options": "Hackathon Team",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "team.team_name",
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mentor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mentor",
+   "options": "Mentor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assignment",
+   "fieldtype": "Link",
+   "label": "Assignment Reference",
+   "options": "Mentor Assignment"
+  },
+  {
+   "fieldname": "criteria_sec",
+   "fieldtype": "Section Break",
+   "label": "Level 2 Evaluation Criteria (Each 0-10, Total 70)"
+  },
+  {
+   "description": "Code quality, structure, implementation (0-10)",
+   "fieldname": "coding",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "1. Coding (0-10)",
+   "reqd": 1
+  },
+  {
+   "description": "System design, scalability, modularity (0-10)",
+   "fieldname": "solution_architecture",
+   "fieldtype": "Float",
+   "label": "2. Solution Architecture (0-10)",
+   "reqd": 1
+  },
+  {
+   "description": "Working demonstration, functional completeness (0-10)",
+   "fieldname": "outcome",
+   "fieldtype": "Float",
+   "label": "3. Outcome (0-10)",
+   "reqd": 1
+  },
+  {
+   "description": "Roadmap, scalability, commercial/social viability (0-10)",
+   "fieldname": "future_plan",
+   "fieldtype": "Float",
+   "label": "4. Future Plan (0-10)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Originality, creative problem solving (0-10)",
+   "fieldname": "innovation",
+   "fieldtype": "Float",
+   "label": "5. Innovation (0-10)",
+   "reqd": 1
+  },
+  {
+   "description": "Teamwork, interdisciplinary execution (0-10)",
+   "fieldname": "collaboration",
+   "fieldtype": "Float",
+   "label": "6. Collaboration (0-10)",
+   "reqd": 1
+  },
+  {
+   "description": "Overall mentor judgment and impression (0-10)",
+   "fieldname": "mentor_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "7. Mentor's Scorecard (0-10)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "summary_sec",
+   "fieldtype": "Section Break",
+   "label": "Score Total & Review"
+  },
+  {
+   "description": "Calculated sum of all 7 criteria (max 70)",
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Marks (/70)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Detailed Evaluation Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "L2 Evaluation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-06 13:57:05.348627",
+ "modified_by": "Administrator",
+ "module": "Hackathon Eval",
+ "name": "L2 Evaluation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hackathon Admin",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Mentor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
